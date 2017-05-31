@@ -1,0 +1,24 @@
+{
+  "bootstrapped": true,
+  "in_process_packages":
+  [
+  ],
+  "installed_packages":
+  [
+    "Can I Use",
+    "ColorPicker",
+    "CSScomb",
+    "CSScomb Alpha Sort",
+    "EditorConfig",
+    "Emmet",
+    "Git",
+    "MarkdownEditing",
+    "Package Control",
+    "Syntax Highlighting for Sass",
+    "Terminal",
+    "Theme - Centurion",
+    "Theme - Soda",
+    "Tomorrow Color Schemes",
+    "Trimmer"
+  ]
+}
