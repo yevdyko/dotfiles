@@ -1,0 +1,45 @@
+[user]
+  email = yevdyko@gmail.com
+  name = Yev Dyko
+[core]
+  autocrlf = false
+  safecrlf = false
+  editor = vim
+  excludesfile = /Users/yev/.gitignore_global
+  savecrlf = true
+[push]
+  default = matching
+[alias]
+  del = branch -d
+  br = branch
+  com = checkout master
+  co = checkout
+  gr = grep -Ii
+  am = commit --amend
+  amend = commit --amend -m
+  f = fetch
+  po = push origin
+  pom = push origin master
+  poh = push origin HEAD
+  pl = pull
+  plom = pull origin master
+  rv = remote -v
+  st = status
+  aa = add -A
+  ci = commit
+  cm = commit -m
+  hist = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+  type = cat-file -t
+  dump = cat-file -p
+[color]
+  ui = true
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
