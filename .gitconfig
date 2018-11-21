@@ -5,7 +5,7 @@
   autocrlf = false
   safecrlf = false
   editor = vim
-  excludesfile = /Users/yev/.gitignore_global
+  excludesfile = /Users/yevdyko/.gitignore_global
   savecrlf = true
 [push]
   default = matching
@@ -13,7 +13,7 @@
   del = branch -d
   br = branch
   com = checkout master
-  co = checkout
+  ch = checkout
   gr = grep -Ii
   am = commit --amend
   amend = commit --amend -m
@@ -24,20 +24,16 @@
   pl = pull
   plom = pull origin master
   rv = remote -v
-  st = status
+  s = status --short --branch
+  d = diff
   aa = add -A
-  ci = commit
+  c = commit
   cm = commit -m
   hist = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
   type = cat-file -t
   dump = cat-file -p
 [color]
   ui = true
-[difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-[mergetool "sourcetree"]
-  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
